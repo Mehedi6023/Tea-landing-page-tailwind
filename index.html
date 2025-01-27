@@ -1,55 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- css link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind customize -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              fontSize: {
-                'hero': 'clamp(2.25rem, 1.9549356223175964rem + 1.7167381974248928vw, 3.5rem)',
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontSize: {
+              "hero": "clamp(2.25rem, 1.7188841201716738rem + 3.0901287553648067vw, 4.5rem)",
 
-                'h1': 'clamp(1.875rem, 1.6094420600858368rem + 1.5450643776824033vw, 3rem)',
+              "h1": "clamp(1.875rem, 1.6094420600858368rem + 1.5450643776824033vw, 3rem)",
 
-                'h2': 'clamp(1.5rem, 1.3819742489270386rem + 0.6866952789699571vw, 2rem)',
-              }
-            }
-          }
-        }
-      </script>
+              "h2": "clamp(1.5rem, 1.3819742489270386rem + 0.6866952789699571vw, 2rem)",
+
+              "h3": "clamp(1rem, 0.95rem + 0.25vw, 1.25rem)"
+            },
+          },
+        },
+      };
+    </script>
     <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/d4ee3cb961.js" crossorigin="anonymous"></script>
-</head>
-<body class="mw-[1600px] mx-auto">
-    
-  <main class="mw-[1440px] mx-auto p-[10px] sm:p-[20px] md:px-[30px] lg:px-[40px] xl:px-[60px]"> 
-    <div class="hero sm:flex justify-center items-center">
-      <div class="left">
-        <div class="left-content">
-          <h1 class="text-hero sm:text-left text-center">It's good 
-            tea time at The Tea House</h1>
-          <p class="text-lg text-center sm:text-left py-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-          <div class="btn-container flex justify-center sm:justify-start">
-            <button class="btn text-lg bg-gradient-to-r from-[#FF8938] to-[#FF0000] 
-         px-5 py-4 rounded-full text-white flex gap-2 items-center">
-            <p>Explore More</p>
-            <i class="fas fa-arrow-right -rotate-45"></i>
-          </button>
+    <script
+      src="https://kit.fontawesome.com/d4ee3cb961.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="mw-[1600px] mx-auto">
+    <main
+      class="mw-[1440px] mx-auto p-[10px] sm:p-[20px] md:px-[30px] lg:px-[40px] xl:px-[60px]"
+    >
+      <!-- Hero section -->
+      <div class="hero sm:flex justify-center items-center">
+        <div class="left">
+          <div class="left-content">
+            <h1 class="text-hero sm:text-left text-center">
+              It's good tea time at The Tea House
+            </h1>
+            <p class="text-lg text-center sm:text-left py-7">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <div class="btn-container flex justify-center sm:justify-start">
+              <button
+                class="btn text-lg bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-5 py-4 rounded-full text-white flex gap-2 items-center"
+              >
+                <p>Explore More</p>
+                <i class="fas fa-arrow-right -rotate-45"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right flex justify-center items-center">
+          <div class="r-img-container w-full h-auto">
+            <img
+              src="content/images/banner.png"
+              alt="coffee"
+              class="w-full h-auto"
+            />
           </div>
         </div>
       </div>
-      
-      <div class="right flex justify-center items-center">
-        <img src="content/images/banner.png" alt="">
+      <!-- End of Hero section -->
+
+      <!-- Product section -->
+      <div class="product-section my-3">
+        <h1 class="text-h1 text-center">Our Featured Products</h1>
+        <p class="text-center my-4 max-w-[30ch] mx-auto sm:max-w-[80ch]">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomized words which don't look even slightly believable.
+        </p>
+        <div class="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div
+            class="card1 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] p-6 mx-auto rounded-lg"
+          >
+            <div class="img-container">
+              <img src="content/images/tea-1.png" alt="tea" class="mx-auto" />
+            </div>
+            <h2 class="text-h2 text-center my-5">Milk Tea</h2>
+            <p class="mx-auto text-center">Creamer could be replaced by fresh milk</p>
+          </div>
+
+          <div
+            class="card2 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] p-6 mx-auto rounded-lg"
+          >
+            <div class="img-container">
+              <img src="content/images/tea-2.png" alt="tea" class="mx-auto" />
+            </div>
+            <h2 class="text-h2 text-center my-5">Black Tea</h2>
+            <p class="mx-auto text-center">Creamer could be replaced by fresh milk</p>
+          </div>
+          <div
+            class="card3 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] p-6 mx-auto rounded-lg"
+          >
+            <div class="img-container">
+              <img src="content/images/tea-3.png" alt="tea" class="mx-auto" />
+            </div>
+            <h2 class="text-h2 text-center my-5">Lemon Tea</h2>
+            <p class="mx-auto text-center">Creamer could be replaced by fresh milk</p>
+          </div>
+          <div
+            class="card4 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] p-6 mx-auto rounded-lg"
+          >
+            <div class="img-container">
+              <img src="content/images/tea-4.png" alt="tea" class="mx-auto" />
+            </div>
+            <h2 class="text-h2 text-center my-5">Green Tea</h2>
+            <p class="mx-auto text-center">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </main>
-</body>
+      <!-- End of product -->
+
+      <!-- Great tea -->
+
+      <section class="mb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <!-- img section -->
+           <div></div>
+          <!-- text -section -->
+           <div></div>
+        </div>
+      </section>
+
+      <!-- End of great tea -->
+    </main>
+  </body>
 </html>
