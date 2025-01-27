@@ -13,8 +13,12 @@
         tailwind.config = {
           theme: {
             extend: {
-              colors: {
-                clifford: '#da373d',
+              fontSize: {
+                'hero': 'clamp(2.25rem, 1.9549356223175964rem + 1.7167381974248928vw, 3.5rem)',
+
+                'h1': 'clamp(1.875rem, 1.6094420600858368rem + 1.5450643776824033vw, 3rem)',
+
+                'h2': 'clamp(1.5rem, 1.3819742489270386rem + 0.6866952789699571vw, 2rem)',
               }
             }
           }
@@ -23,7 +27,29 @@
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/d4ee3cb961.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>hello world</h1>
+<body class="mw-[1600px] mx-auto">
+    
+  <main class="mw-[1440px] mx-auto p-[10px] sm:p-[20px] md:px-[30px] lg:px-[40px] xl:px-[60px]"> 
+    <div class="hero sm:flex justify-center items-center">
+      <div class="left">
+        <div class="left-content">
+          <h1 class="text-hero sm:text-left text-center">It's good 
+            tea time at The Tea House</h1>
+          <p class="text-lg text-center sm:text-left py-7">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <div class="btn-container flex justify-center sm:justify-start">
+            <button class="btn text-lg bg-gradient-to-r from-[#FF8938] to-[#FF0000] 
+         px-5 py-4 rounded-full text-white flex gap-2 items-center">
+            <p>Explore More</p>
+            <i class="fas fa-arrow-right -rotate-45"></i>
+          </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="right flex justify-center items-center">
+        <img src="content/images/banner.png" alt="">
+      </div>
+    </div>
+  </main>
 </body>
 </html>
